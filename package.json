@@ -9,6 +9,9 @@
     "prepublishOnly": "npm run package",
     "check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
+    "story:dev": "histoire dev",
+    "story:build": "histoire build",
+    "story:preview": "histoire preview",
     "test": "playwright test",
     "test:unit": "vitest",
     "lint": "prettier --plugin-search-dir . --check . && eslint .",
@@ -29,6 +32,7 @@
     "svelte": "^3.54.0"
   },
   "devDependencies": {
+    "@histoire/plugin-svelte": "^0.15.9",
     "@playwright/test": "^1.28.1",
     "@sveltejs/adapter-auto": "^2.0.0",
     "@sveltejs/kit": "^1.5.0",
@@ -36,6 +40,7 @@
     "eslint": "^8.28.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-svelte3": "^4.0.0",
+    "histoire": "^0.15.9",
     "prettier": "^2.8.0",
     "prettier-plugin-svelte": "^2.8.1",
     "publint": "^0.1.9",
