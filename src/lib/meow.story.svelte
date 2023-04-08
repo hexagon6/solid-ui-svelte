@@ -1,5 +1,5 @@
 <script>
-  export let Hst;
+  export let Hst
 </script>
 
 <Hst.Story title="🐱 Meow">🐱</Hst.Story>
