@@ -55,6 +55,10 @@
     "vite": "^4.2.0",
     "vitest": "^0.25.3"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hexagon6/solid-ui-svelte.git"
+  },
   "svelte": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "type": "module",
