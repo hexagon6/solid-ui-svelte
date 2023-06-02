@@ -18,10 +18,14 @@
 {#if solidDataset?.type === 'Dataset'}
   {#if solidDataset.graphs.default[thing].type === 'Subject'}
     {@const t = solidDataset.graphs.default[thing].predicates[property]}
-    {#if Object.prototype.hasOwnProperty.call(t, 'namedNodes')}
-      {t.namedNodes}
-    {:else if Object.prototype.hasOwnProperty.call(t, 'literals')}
-      {t.literals[literal]}
+    {#if t}
+      {#if Object.prototype.hasOwnProperty.call(t, 'namedNodes')}
+        {t.namedNodes}
+      {:else if Object.prototype.hasOwnProperty.call(t, 'literals')}
+        {t.literals[literal]}
+      {/if}
+    {:else}
+      {t}
     {/if}
   {/if}
 {/if}
